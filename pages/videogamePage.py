@@ -1,7 +1,7 @@
 
 class videogame:
 #XPAHT
-    titulo_page = "//yt-formatted-string[@id='title']"
+    titulo_page = "//yt-formatted-string[@id='title' and contains(text(),'Videojuegos')]"
 
     titulo_sec = "//span[contains(text(),'Vídeos recomendados')]"
 

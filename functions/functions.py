@@ -55,6 +55,7 @@ class functions(inicializar):
         self.driver.find_element(By.XPATH, explo.btn_videojuegos).click()
 
     def comprobarTitulo(self):
+        time.sleep(2)
         textTitle = self.driver.find_element(By.XPATH, videogame.titulo_page).text
         print("El titulo es " + textTitle)
         if textTitle == videogame.txt_titulo:
